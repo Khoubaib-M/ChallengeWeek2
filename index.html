@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="../portfolio/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="../portfolio/assets/images/homeiconblack.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#Projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front-End Web Developer</p>
+            <h1>Hi, I'm <span>Khoubaib</span></h1>
+        </div>
+      </div>  
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../portfolio/assets/images/placeholder.jpg">
+                </div>
+                <div class="about-col-2"></div>
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta quae nisi odit laboriosam veniam quas doloremque consequuntur ducimus temporibus ratione! Ipsa eius, dolorum hic reiciendis aut ipsam nam est distinctio! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta rerum iure facere quo praesentium vero rem similique placeat magnam itaque aliquam ab eos, fugiat nulla obcaecati, exercitationem dolore sed odit.</p>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="../portfolio/assets/images/comingsoon.png">
+                    <div class="layer">
+                        <h3>Project A</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa illum accusamus quam fugit ullam reiciendis vel similique tenetur tempore nisi assumenda saepe hic ab iste iusto cupiditate, pariatur ut a.</p>
+                        <a href="#"><i class="fa-regular fa-square-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../portfolio/assets/images/comingsoon.png">
+                    <div class="layer">
+                        <h3>Project B</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa illum accusamus quam fugit ullam reiciendis vel similique tenetur tempore nisi assumenda saepe hic ab iste iusto cupiditate, pariatur ut a.</p>
+                        <a href="#"><i class="fa-regular fa-square-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../portfolio/assets/images/comingsoon.png">
+                    <div class="layer">
+                        <h3>Project C</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa illum accusamus quam fugit ullam reiciendis vel similique tenetur tempore nisi assumenda saepe hic ab iste iusto cupiditate, pariatur ut a.</p>
+                        <a href="#"><i class="fa-regular fa-square-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button">See More</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left"></div>
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Khoubaib15@outlook.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-media-icons">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="../portfolio/assets/images/cv-template-iconic@3x (1).pdf" download class="button button2">Download CV</a>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="button button2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Khoubaib</p>
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200";
+        }
+    </script>
+    
+</body>
+</html>
